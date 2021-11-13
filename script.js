@@ -9,7 +9,7 @@ $(document).ready(function(){
     function addVideoAndPlay(link){
 
         $("#intContainer").append(
-        `<video class = "mx-auto" id = "studentVid" controls="controls" height="480" width="640">
+        `<video class = "mx-auto" id = "studentVid" controls="controls" style = "width:50%;height:auto">
             <source id = "vidSrc" src = "${link}"  type="video/mp4">
         </video>`);
         $('#studentVid').trigger('play');
