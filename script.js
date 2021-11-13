@@ -24,7 +24,7 @@ $(document).ready(function(){
         let interval = 1000;
         test.asserts.forEach((assert,i)=>{
             setTimeout(function(){
-                $("#intContainer").append(`<div id = "assert-item-${i}"class = "px-4 mx-4 d-flex justify-content-start align-items-start"> <p>${assert}</p> <div class = "mt-1 spinner-${i} mx-4" id = 'loading' ></div></div>`)
+                $("#intContainer").append(`<div id = "assert-item-${i}"class = "mx-4 d-flex justify-content-start align-items-start"> <p>${assert}</p> <div class = " spinner-${i} mx-4 my-1" id = 'loading' ></div></div>`)
             },interval)
             interval += 1000;  
         })
