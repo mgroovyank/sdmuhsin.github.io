@@ -1,0 +1,13 @@
+{
+    "tests":[
+        {
+            "title":"Test : gain Vishal's approval",
+            "asserts":[
+                "Should be A",
+                "Should be B",
+                "Should be C",
+                "Should be D"
+            ]
+        }
+    ]
+}
