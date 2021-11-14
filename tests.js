@@ -27,5 +27,15 @@ let tests = [
                 "Should be C",
                 "Should be D"
             ]
+        },
+        {
+            "title":"Test : Gain Mayank's approval",
+            "asserts":[
+                "Assert that Brad is knowledgable",
+                "Assert that be Brad shares his knowledge with students",
+                "Assert that Brad helps to increase my skill set",
+                "Assert that Brad always wins"
+            ],
+            "videoLink":"https://dl.dropboxusercontent.com/s/q0knpz1yjw75mlx/sadbg.mp4?dl=0"
         }
     ]
