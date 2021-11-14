@@ -6,6 +6,10 @@ $(document).ready(function(){
     $("#textStyle").textbanner({cycles:100,growth:150});
     $("#nextButton").attr("disabled",true)
 
+    function addImg(imgLink){
+        $("#intContainer").append(
+            `<div class = "container-fluid w-100 d-flex justify-content-center align-items-center my-4"> <img onload="$(this).fadeIn();" style = "max-width:50vw" src = ${imgLink} /> </div>`);
+    }
     function addVideoAndPlay(link){
 
         $("#intContainer").append(
@@ -42,6 +46,8 @@ $(document).ready(function(){
                     $("#nextButton").attr("disabled",false);
                     if(test.videoLink){
                         addVideoAndPlay(test.videoLink)
+                    }else if(test.imgLink){
+                        addImg(test.imgLink)
                     }
                 }
             },interval);
@@ -59,9 +65,23 @@ $(document).ready(function(){
         }
     }
     
+    function playFUllVideo(stageId){
+        $(stageId).empty()
+        $(stageId).append("<div id = 'intContainer' class = 'container-fluid d-flex flex-column ' style= 'min-height:75%'></div>")
+        addVideoAndPlay(tests[0].videoLink)
+    }
     $("#nextButton").click(function(){
-        $("#nextButton").attr("disabled",true)
-        nextTest();
+        
+        if( testCounter < tests.length - 1){
+            $("#nextButton").attr("disabled",true)
+            nextTest();
+        }else if(testCounter == tests.length - 1){
+            playFUllVideo("#stage")
+        }else if(testCounter == tests.length){
+            // play title card
+
+        }
+        
     });
 
     $(".startButton").click(function(){

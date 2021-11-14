@@ -7,7 +7,7 @@ let tests = [
                 "Assert that Brad taught me SpringBoot",
                 "Assert that Brad will be missed"
             ],
-            "videoLink":"https://dl.dropboxusercontent.com/s/q0knpz1yjw75mlx/sadbg.mp4?dl=0"
+            "imgLink":"images/halloween_gallery_1.JPG"
         },
         {
             "title":"Test : Gain Shikha's approval",
