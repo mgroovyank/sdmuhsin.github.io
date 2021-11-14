@@ -1,6 +1,6 @@
 let tests = [
         {
-            "title":"Test : Gain Vishal's Approval",
+            "title":"Test : Vishal",
             "asserts":[
                 "Assert that Brad is a great teacher",
                 "Assert that Brad tells cool jokes ",
