@@ -40,6 +40,14 @@ let tests = [
             "videoLink":"https://dl.dropboxusercontent.com/s/q0knpz1yjw75mlx/sadbg.mp4?dl=0"
         },
         {
+            "title":"Test : Gain Yash's approval",
+            "asserts":[
+                "Assert that Brad is awesome",
+                "Assert that Brad will meet us when he is in India"
+            ],
+            "videoLink":"https://dl.dropboxusercontent.com/s/q0knpz1yjw75mlx/sadbg.mp4?dl=0"
+        },
+        {
             "title":"Test : Gain Everyone's Approval",
             "asserts":[
                 "Assert that Brad forms a dream team!",
